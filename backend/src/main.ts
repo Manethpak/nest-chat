@@ -14,7 +14,8 @@ async function bootstrap() {
   });
 
   await app.listen(3000, '0.0.0.0', () => {
-    Logger.log('Listening at http://localhost:3000', 'Bootstrap');
+    Logger.log('Listening at 0.0.0.0:3000', 'Bootstrap');
+    Logger.log('Press Ctrl+C to quit', 'Bootstrap')
   });
 }
 bootstrap();
